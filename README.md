@@ -1,1 +1,1 @@
-# Legal-Genius-
+# Legal-Genies-
