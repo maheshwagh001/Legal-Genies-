@@ -1,0 +1,172 @@
+*{
+  box-sizing: border-box;
+}
+
+#title{
+  /* background-color: #ff4c68; */
+  color: #fff;
+}
+
+body{
+  background:#146C94;
+  color:#485e74;
+  line-height:1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:1em;
+  font-family: "Montserrat";
+  font-weight: lighter;
+}
+
+
+.collapse{
+  /* text-align: center; */
+  width: 20%;
+}
+.navbar-brand{
+font-size: 3vw;
+font-weight: bold;
+font-family: "Ubuntu";
+
+}
+
+.nav-link{
+font-size: 1.4vw;
+font-family: "Montserrat";
+/* padding: 0 10px; */
+/* position: relative; */
+/* left: 33vw; */
+}
+.nav-item{
+  color: #fff;
+  padding: 0 0.6vw;
+}
+
+.navbar-nav{
+  /* position: relative; */
+  /* left: 30vw; */
+  /* position: absolute; */
+  /* left: 1rem; */
+  /* right: 1vw; */
+  /* margin: 5% 0 5% auto; */
+  /* width: 20%; */
+}
+
+
+.container{
+  max-width:1170px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;
+}
+
+ul{
+  list-style: none;
+  padding:0;
+}
+
+.brand{
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.brand span{
+  color:#fff;
+}
+
+.wrapper{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > *{
+  padding: 1em;
+}
+
+.company-info{
+  background:#AFD3E2;
+  font-size: 1vw;
+}
+.company-info-title{
+  font-size: 1.5vw;
+  margin-bottom:3%;
+}
+
+.company-info li{
+  /* text-align: center; */
+  margin:0 0 0.5vw 0;
+  /* padding: 3% 0; */
+}
+.fa{
+  margin-right: 2%;
+}
+
+.contact{
+  background:#f9feff;
+  font-size: 1vw;
+}
+.contact-title{
+  font-size: 1.8vw;
+  padding-bottom: 2%;
+}
+
+/* FORM STYLES */
+.contact form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+}
+
+.contact form label{
+  display:block;
+}
+
+.contact form p{
+  margin:0;
+}
+
+.contact form .full{
+  grid-column: 1 / 3;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+  width:100%;
+  padding:1em;
+  border:1px solid #c9e6ff;
+}
+
+.contact form button{
+  background:#AFD3E2;
+  border:0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,.contact form button:focus{
+  background:#92bde7;
+  color:#fff;
+  outline:0;
+  transition: background-color 2s ease-out;
+}
+
+.alert{
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+}
+
+/* LARGE SCREENS */
+@media(min-width:700px){
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper > *{
+    padding:2em;
+  }
+
+  .company-info h3, .company-info ul, .brand{
+    text-align: left;
+  }
+}
