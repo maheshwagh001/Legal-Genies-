@@ -1,13 +1,27 @@
-var config = {
-apiKey: "AIzaSyAS4zkKbsMGOZ1cvfJd8QUiiSqIAb4p2Mw",
-authDomain: "legal-genies-fb784.firebaseapp.com",
-databaseURL: "https://legal-genies-fb784-default-rtdb.firebaseio.com",
-projectId: "legal-genies-fb784",
-storageBucket: "legal-genies-fb784.appspot.com",
-messagingSenderId: "31281251836",
-appId: "1:31281251836:web:ed76c049c65c440a515e79"
-};
-firebase.initializeApp(config);
+const firebaseConfig = {
+    apiKey: "AIzaSyAS4zkKbsMGOZ1cvfJd8QUiiSqIAb4p2Mw",
+    authDomain: "legal-genies-fb784.firebaseapp.com",
+    databaseURL: "https://legal-genies-fb784-default-rtdb.firebaseio.com",
+    projectId: "legal-genies-fb784",
+    storageBucket: "legal-genies-fb784.appspot.com",
+    messagingSenderId: "31281251836",
+    appId: "1:31281251836:web:ed76c049c65c440a515e79"
+  };
+
+  // Initialize Firebase
+  // const app = initializeApp(firebaseConfig);
+  firebase.initializeApp(firebaseConfig);
+
+// var config = {
+// apiKey: "AIzaSyAS4zkKbsMGOZ1cvfJd8QUiiSqIAb4p2Mw",
+// authDomain: "legal-genies-fb784.firebaseapp.com",
+// databaseURL: "https://legal-genies-fb784-default-rtdb.firebaseio.com",
+// projectId: "legal-genies-fb784",
+// storageBucket: "legal-genies-fb784.appspot.com",
+// messagingSenderId: "31281251836",
+// appId: "1:31281251836:web:ed76c049c65c440a515e79"
+// };
+// firebase.initializeApp(config);
 // Your web app's Firebase configuration
 
 // Import the functions you need from the SDKs you need
@@ -38,7 +52,10 @@ firebase.initializeApp(config);
   //     messagingSenderId: "31281251836",
   //     appId: "1:31281251836:web:ed76c049c65c440a515e79"
   //   };
-  //   const app = initializeApp(firebaseConfig);
+  //   firebase.initializeApp(firebaseConfig);
+  //   // firebase.initializeApp(config);
+  //   var db = firebase.firestore();
+    // const app = initializeApp(firebaseConfig);
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
